@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🚖 Dashboard Employé</h1>
+
+<button onclick="startService()">✅ Prise de service</button>
+<button onclick="endService()">❌ Fin de service</button>
+
+<div class="card">
+<h2>Ajouter un trajet</h2>
+
+<input id="client" placeholder="Nom du client">
+<input id="price" placeholder="Prix">
+
+<button onclick="addRide()">➕ Ajouter</button>
+</div>
+
+<div class="card">
+<h2>Mes trajets</h2>
+<ul id="rideList"></ul>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
