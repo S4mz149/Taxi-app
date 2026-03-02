@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>👑 Panel Administrateur</h1>
+
+<div class="card">
+<h2>➕ Ajouter Employé</h2>
+
+<input id="addUser" placeholder="Nom utilisateur">
+<input id="addPass" type="password" placeholder="Mot de passe">
+
+<select id="addRole">
+    <option value="employee">Employee</option>
+    <option value="admin">Admin</option>
+</select>
+
+<button onclick="addEmployee()">Ajouter</button>
+</div>
+
+<div class="card">
+<h2>👥 Liste Employés</h2>
+<ul id="userList"></ul>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
